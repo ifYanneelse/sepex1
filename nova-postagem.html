@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head><!--Seção de cabeçalho-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="img/favicon/favicon.png" />
+    <title>Scientia Amabilis</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--Font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body><!--seção principal do site-->
+
+
+    <!-- Título do site -->
+    <header>
+        <img src="img/logo/Logo_SCIENTIAAMABILIS.png" alt="Logo do Scientia Amabilis" class="logo">
+        <div class="title-h">
+            <h1>Scientia Amabilis</h1>
+            <h2>Botânica</h2>
+        </div>
+    </header>
+
+
+
+    <!-- MENU -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="sobre-oprojeto.html">O Projeto</a></li>
+            <li><a href="material-didatico.html">Material didático</a></li>
+            <li class="has-submenu"><a href="#">Scientia Amabilis SC</a>
+                <ul class="submenu">
+                    <li><a href="vegetacao-flora-sc.html">Vegetação e Flora de SC</a></li>
+                    <li><a href="cartilhas.html">Cartilhas</a></li>
+                    <li><a href="jogos.html">Jogos</a></li>
+                    <li><a href="chaves-dicotomicas.html">Chaves Dicotômicas</a></li>    
+                    <li><a href="exposicoes.html">Exposições Artísticas</a></li>     
+                </ul>
+            </li>
+            <li><a href="acervo.html">Acervo</a></li>
+            <li><a href="noticias.html">Notícias</a></li>
+            <li><a href="links.html">Links</a></li>
+            <li><a href="scientiaamabilis-lab.html">SAL</a></li>
+        </ul>
+    </nav>
+
+
+
+    <!--xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
+
+
+    <!-- Conteúdo principal da página -->
+    <main>
+
+
+
+        <!--Seção sobre o projeto-->
+        <section id="section">
+            <h3>Notícias</h3>
+        </section>
+
+        <section id="section">
+            <div class="box-postagem">
+
+                <h3 class="titulo-post">Titulo producaoTitulo producaoTitulo producaoTitulo producao Titulo producao
+                    Titulo producao Titulo producao Titulo producao Titulo producao</h3>
+                <p class="data-post">01 de agosto de 2024</p>
+
+                <img src="img/fundo-conteudo.png" alt="Foto Policy Briefs" class="img-post">
+
+                <p class="descricao-post">
+                    Lorem ipsum dolor sit amet. Ad excepturi maxime qui voluptatem velit quo earum vero non voluptatibus
+                    laboriosam qui placeat excepturi eum omnis quia et animi laboriosam. Eos eaque enim id facere esse
+                    ad sint odio et neque ipsa.<br><br>
+
+                    Sit placeat doloribus sed velit fugiat non consectetur galisum et maiores labore sed sunt doloribus
+                    aut facere totam. Ea possimus excepturi et explicabo perferendis qui consequuntur illo ut voluptatem
+                    consectetur aut dolorem minima qui temporibus quia. Ab culpa molestias rem quos dicta ut beatae
+                    nihil eos omnis necessitatibus et ullam debitis ea assumenda eveniet! At omnis error aut quia quidem
+                    vel voluptatem iure ut tempore suscipit.<br><br>
+
+                    Est accusamus Quis id quia fugiat et sunt ducimus! Ut ipsum excepturi et atque eaque id
+                    molestias saepe non aliquam tempore et ducimus eius. Nam nihil quos vel rerum veniam ea dolores
+                    eveniet.
+                </p><br>
+
+                <br>
+                <hr width="55%" color="#3B642F" size="1px" />
+
+                <p class="compartilhe-post">
+                    Está gostando do conteúdo? Compartilhe com:<br>
+                    <a href="https://twitter.com/share?url=URL_DO_CONTEUDO" target="_blank"
+                        title="Compartilhar no Twitter">
+                        <i class="fa-brands fa-square-x-twitter fa-2xl" style="color: #3b642f; font-size: 27px;"></i>
+                    </a>
+                    <a href="https://api.whatsapp.com/send?text=URL_DO_CONTEUDO" target="_blank"
+                        title="Compartilhar no WhatsApp">
+                        <i class="fa-brands fa-whatsapp fa-2xl" style="color: #3b642f; font-size: 27px;"></i>
+                    </a>
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=URL_DO_CONTEUDO" target="_blank"
+                        title="Compartilhar no Facebook">
+                        <i class="fa-brands fa-square-facebook fa-2xl" style="color: #3B642F; font-size: 27px;"></i>
+                    </a><br>
+                </p>
+
+            </div>
+        </section>
+
+        <section id="form">
+			<form action="cadastrar.php" method="post" enctype="multipart/form-data"> <!-- enctype para utilizar vários tipos de arquivos -->
+
+                
+				<label> Título </label>
+                <input type="text" name="titulo-post" placeholder="Escreva aqui o título do texto" class="entradas" required><br>
+
+                <label> Data da publicação </label>
+                <input type="text" name="titulo-post" placeholder="Escolha" class="entradas" required><br>
+
+                <label> Inserir imagem principal </label>
+                <input type="file" name="fotoPerfil" class="entradas" required><br>
+
+                <label> Descrição </label>
+                <input type="text" name="sobrenome" placeholder="Escreva aqui o seu texto" class="entradas" required><br>
+
+                <label> Inserir mais fotos </label>
+                <input type="file" name="fotoPerfil" class="entradas"><br>
+
+                <label> Inserir vídeo </label>
+                <input type="file" name="fotoPerfil" class="entradas"><br>
+
+                <label> Inserir links </label>
+                <input type="file" name="fotoPerfil" class="entradas"><br>
+                    
+                <label>  
+                <input type="submit" value="Cadastrar" class="bt_form">  
+                </label> 
+
+                <a href="login.php">Logar</a>
+            
+			</form>
+		</section>
+
+
+        <!--Seção recomendar-->
+        <section id="section">
+            <h3>.</h3>
+        </section>
+
+
+    </main>
+
+
+
+
+
+
+    <!--xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
+
+
+    <!-- Rodapé -->
+
+    <footer>
+        <div class="footer-columns">
+
+            <section id="contatos">
+                <a href="index.html"><img src="img/logo/Logo_SCIENTIAAMABILIS.png" alt="Logo do Scientia Amabilis"
+                        style="width: 45%"></a>
+            </section>
+
+            <section id="contatos">
+                <p class="titulo-contato">Contato</p>
+
+                <p class="texto-contato">E-mail</p>
+                <a href="#">
+                    <div class="email">
+                        <p class="texto-email">scientiaamabilis@contato.ufsc.br</p>
+                    </div>
+                </a>
+                <div class="endereco">
+                    <p class="texto-contato"></br>Endereço</p>
+                    <p class="texto-endereco">Universidade Federal de Santa Catarina - UFSC</br>
+                        CCB, Edificio Fritz Muller</br>Bloco A - Sala 207A.</p>
+                </div>
+            </section>
+
+            <section id="redes-sociais">
+                <p class="titulo-redes">Scientia Amabilis nas Redes Sociais</br></br></p>
+                <div class="social-icons">
+                    <a href="https://www.youtube.com/channel/UCQ-ROFXytZ_rEbCD9sfKLiQ">
+                        <div class="youtube">
+                            <i class="fa-brands fa-youtube fa-2xl" style="color: #3B642F; font-size: 51px;"></i>
+                        </div>
+                    </a>
+                    <a href="https://www.instagram.com/scientiamabilis">
+                        <div class="instagram">
+                            <i class="fa-brands fa-instagram fa-2xl" style="color: #3B642F; font-size: 50px;"></i>
+                        </div>
+                    </a>
+                    <a href="https://www.facebook.com/suabotanica">
+                        <div class="facebook">
+                            <i class="fa-brands fa-square-facebook fa-2xl" style="color: #3B642F; font-size: 50px;"></i>
+                        </div>
+                    </a>
+                </div>
+
+            </section>
+
+        </div>
+        <br>
+        <p class="footer-rights"> &copy; Scientia Amabilis 2024. Todos os direitos
+            reservados. Desenvolvido por
+        </p>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

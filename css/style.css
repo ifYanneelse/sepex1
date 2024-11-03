@@ -1,0 +1,1390 @@
+/* Importar fontes do Google */
+@import url("https://fonts.googleapis.com/css2?family=Gupter:wght@400;500;700&display=swap");
+
+/* Reset e definições globais */
+*{margin: 0; padding:0; font-family: "Gupter", serif; font-size: 18px; font-weight: 400; font-style: normal;}
+
+
+
+/*------------------------------------------------------------------------------------------HEADER*/
+
+/* ______________________________________________________________Cabeçalho */
+header {
+	background-color: #ffffff;/* Fundo branco */
+	color: #3B642F;/* Letras verdes */
+	align-items: center; /*alinha h2 e h3 no centro do centro*/
+	text-align: center;
+	display: flex;
+	justify-content: center;	
+	padding-bottom: 11px;
+	padding-top: 34px;
+}
+
+img.logo {
+	width: 10%;
+	height: auto;
+	margin-right: 10px;
+	/* Espaço entre a imagem e o título */
+    margin-bottom: 20px;
+}
+
+.title-h {
+    display: flex;
+    flex-direction: column;/* Alinha elementos em coluna */
+    align-items: center;
+}
+
+
+h1, 
+h2 { 
+	font-family: 'Gupter', serif;
+	font-weight: 700;
+	margin: 1px 0;
+	/* Adiciona espaço acima e abaixo dos títulos */
+	text-transform: uppercase;
+	letter-spacing: 4px;		   
+}
+
+h1 {
+	font-size: 23px;
+}
+h2 {
+	font-size: 21px;
+}
+
+
+/*_______________________________________________________________NAV*/
+nav {
+    background-color: #ffffff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    border-top: 1px solid #657346;
+    /* Linha verde acima do menu de navegação */
+    border-bottom: 1px solid #657346;
+    /* Linha verde abaixo do menu de navegação */
+    box-sizing: border-box;
+    box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 90px; /* Espaço entre a nav e o conteúdo */
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul li {
+    display: inline-block;
+    background-color: #ffffff;
+    position: relative;
+}
+
+nav a {
+    display: block;
+    padding: 0 17px;
+    color: #202617;
+    /* Cor do texto do menu de navegação */
+    font-size: 20px;
+    line-height: 52px;
+    height: 52px; /* Define uma altura fixa para evitar deslocamento */
+    text-decoration: none;
+    transition: color 0.3s;
+    /* Transição para a cor do texto */
+}
+
+nav a:hover, 
+nav a:focus,
+nav a:active { 	
+    color: #77a067;/* Cor ao passar o mouse */
+}
+
+/* Fisrt level Dropdown */
+nav ul li ul li {
+    background-color: #647345;
+    /* Fundo do submenu */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    text-align: left;	
+    width: 240px;
+    float: none;
+    display: list-item;
+    position: relative;	
+}
+
+nav ul li ul li a {
+    color: #ffffff;
+    /* Cor do texto do menu de navegação */
+    font-size: 18px;
+}
+
+li > a:after { 
+    content: ' +'; 
+}
+
+li > a:only-child:after { 
+    content: ''; 
+}
+
+
+/* Hide Dropdowns by Default */
+nav ul ul {
+    display: none;
+    position: absolute; 
+    top: 52px; /* Ajuste para a altura do nav principal */	
+}
+
+nav ul li ul li a:hover,
+nav ul li ul li a:focus,
+nav ul li ul li a:active {
+    color: #f8f3f3;
+    /* Cor do texto ao passar o mouse */
+    border-bottom: 3px solid #ffffff;
+    background-color:#203a23; 
+}
+
+/* Display Dropdowns on Hover */
+nav ul li:hover > ul {
+    display: inherit;
+}
+
+/* Ensure the submenu is displayed below the main menu */
+nav ul ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+}
+
+/*------------------------------------------------------------------------------------------ BODY*/
+
+
+body {
+	font-family: Arial, sans-serif;
+	background-color: #ffffff;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 2000 1500'%3E%3Cdefs%3E%3Crect stroke='%23ffffff' stroke-width='0.7' width='1' height='1' id='s'/%3E%3Cpattern id='a' width='3' height='3' patternUnits='userSpaceOnUse' patternTransform='rotate(109 1000 750) scale(5) translate(-800 -600)'%3E%3Cuse fill='%23fcfcfc' href='%23s' y='2'/%3E%3Cuse fill='%23fcfcfc' href='%23s' x='1' y='2'/%3E%3Cuse fill='%23fafafa' href='%23s' x='2' y='2'/%3E%3Cuse fill='%23fafafa' href='%23s'/%3E%3Cuse fill='%23f7f7f7' href='%23s' x='2'/%3E%3Cuse fill='%23f7f7f7' href='%23s' x='1' y='1'/%3E%3C/pattern%3E%3Cpattern id='b' width='7' height='11' patternUnits='userSpaceOnUse' patternTransform='rotate(109 1000 750) scale(5) translate(-800 -600)'%3E%3Cg fill='%23f5f5f5'%3E%3Cuse href='%23s'/%3E%3Cuse href='%23s' y='5' /%3E%3Cuse href='%23s' x='1' y='10'/%3E%3Cuse href='%23s' x='2' y='1'/%3E%3Cuse href='%23s' x='2' y='4'/%3E%3Cuse href='%23s' x='3' y='8'/%3E%3Cuse href='%23s' x='4' y='3'/%3E%3Cuse href='%23s' x='4' y='7'/%3E%3Cuse href='%23s' x='5' y='2'/%3E%3Cuse href='%23s' x='5' y='6'/%3E%3Cuse href='%23s' x='6' y='9'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='h' width='5' height='13' patternUnits='userSpaceOnUse' patternTransform='rotate(109 1000 750) scale(5) translate(-800 -600)'%3E%3Cg fill='%23f5f5f5'%3E%3Cuse href='%23s' y='5'/%3E%3Cuse href='%23s' y='8'/%3E%3Cuse href='%23s' x='1' y='1'/%3E%3Cuse href='%23s' x='1' y='9'/%3E%3Cuse href='%23s' x='1' y='12'/%3E%3Cuse href='%23s' x='2'/%3E%3Cuse href='%23s' x='2' y='4'/%3E%3Cuse href='%23s' x='3' y='2'/%3E%3Cuse href='%23s' x='3' y='6'/%3E%3Cuse href='%23s' x='3' y='11'/%3E%3Cuse href='%23s' x='4' y='3'/%3E%3Cuse href='%23s' x='4' y='7'/%3E%3Cuse href='%23s' x='4' y='10'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='c' width='17' height='13' patternUnits='userSpaceOnUse' patternTransform='rotate(109 1000 750) scale(5) translate(-800 -600)'%3E%3Cg fill='%23f2f2f2'%3E%3Cuse href='%23s' y='11'/%3E%3Cuse href='%23s' x='2' y='9'/%3E%3Cuse href='%23s' x='5' y='12'/%3E%3Cuse href='%23s' x='9' y='4'/%3E%3Cuse href='%23s' x='12' y='1'/%3E%3Cuse href='%23s' x='16' y='6'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='d' width='19' height='17' patternUnits='userSpaceOnUse' patternTransform='rotate(109 1000 750) scale(5) translate(-800 -600)'%3E%3Cg fill='%23ffffff'%3E%3Cuse href='%23s' y='9'/%3E%3Cuse href='%23s' x='16' y='5'/%3E%3Cuse href='%23s' x='14' y='2'/%3E%3Cuse href='%23s' x='11' y='11'/%3E%3Cuse href='%23s' x='6' y='14'/%3E%3C/g%3E%3Cg fill='%23efefef'%3E%3Cuse href='%23s' x='3' y='13'/%3E%3Cuse href='%23s' x='9' y='7'/%3E%3Cuse href='%23s' x='13' y='10'/%3E%3Cuse href='%23s' x='15' y='4'/%3E%3Cuse href='%23s' x='18' y='1'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='e' width='47' height='53' patternUnits='userSpaceOnUse' patternTransform='rotate(109 1000 750) scale(5) translate(-800 -600)'%3E%3Cg fill='%232B9101'%3E%3Cuse href='%23s' x='2' y='5'/%3E%3Cuse href='%23s' x='16' y='38'/%3E%3Cuse href='%23s' x='46' y='42'/%3E%3Cuse href='%23s' x='29' y='20'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='f' width='59' height='71' patternUnits='userSpaceOnUse' patternTransform='rotate(109 1000 750) scale(5) translate(-800 -600)'%3E%3Cg fill='%232B9101'%3E%3Cuse href='%23s' x='33' y='13'/%3E%3Cuse href='%23s' x='27' y='54'/%3E%3Cuse href='%23s' x='55' y='55'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='g' width='139' height='97' patternUnits='userSpaceOnUse' patternTransform='rotate(109 1000 750) scale(5) translate(-800 -600)'%3E%3Cg fill='%232B9101'%3E%3Cuse href='%23s' x='11' y='8'/%3E%3Cuse href='%23s' x='51' y='13'/%3E%3Cuse href='%23s' x='17' y='73'/%3E%3Cuse href='%23s' x='99' y='57'/%3E%3C/g%3E%3C/pattern%3E%3C/defs%3E%3Crect fill='url(%23a)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23b)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23h)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23c)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23d)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23e)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23f)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23g)' width='100%25' height='100%25'/%3E%3C/svg%3E");
+	background-attachment: fixed;
+	background-size: cover;
+	color: #0B2625;
+	/* Letras verdes */
+}
+
+
+#section {
+	position: relative;
+	text-align: center;
+	margin-bottom: 125px;
+}
+
+h3 {
+	font-size: 34px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #647345;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+/*------------------------------------------------------------ ---- -------------------- PÁGINA inicial*/
+
+/* Define o contêiner como fundo de tela cheia */
+.background-box-inicial {
+    position: relative;
+    width: 100%;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    box-sizing: border-box;
+    overflow: hidden; /* Garante que o fundo com blur não saia dos limites */
+}
+
+/* Camada para o fundo com efeito blur */
+.fundo-blur {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('../img/fundo-conteudo.png') no-repeat center center/cover;
+    filter: blur(2px); /* Aplica o efeito de desfoque */
+    z-index: 1; /* Mantém o fundo atrás do texto */
+}
+
+/* Estiliza o contêiner de texto */
+.texto-conteudo {
+    position: relative;
+    z-index: 2; /* Coloca o texto acima do fundo */
+}
+
+.texto-box-inicial {
+    font-size: 20px;
+    line-height: 1.3;
+    background-color: rgba(237, 245, 233, 0.911); /* Fundo semitransparente */
+    color: #203a23;
+    text-align: justify;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    padding: 60px;
+    max-width: 1000px; /* Limita a largura máxima do texto */
+    margin: 0 auto; /* Centraliza o texto horizontalmente */
+}
+
+
+.a-lista, .a-mailto  {
+    font-weight: bold;
+    font-size: 21px;
+    color:#647345;
+}
+
+.a-lista:hover {
+    color: #214226;
+}
+
+.a-mailto:link {
+    color:#647345;
+}
+.a-mailto:link:hover {
+    color: #214226;
+}
+
+/* Ajustes responsivos */
+@media (max-width: 768px) {
+    .texto-box-inicial {
+        padding: 20px;
+        font-size: 18px;
+        margin: 0 20px; /* Margem menor para dispositivos móveis */
+    }
+}
+
+
+/* Estilo da palavra com hover */
+.hover-text-clorofil {
+    position: relative; /* Define o contexto de posição */
+    cursor: pointer;
+    font-size: 21px;
+    color: #c5a921;
+    text-decoration-line: underline;
+    text-decoration-style: double;
+}
+
+.hover-text-clorofil:hover {
+    color: #203a23; /* Cor de destaque no hover */
+    font-weight: bold; /* Aumenta o peso da fonte ao passar o mouse */
+}
+
+/* Tooltip em formato quadrado compacto */
+.hover-text-clorofil::after {
+    content: attr(data-tooltip); /* Exibe o texto armazenado em data-tooltip */
+    position: absolute;
+    left: 50%;
+    bottom: 120%;
+    transform: translateX(-50%);
+    width: 310px; /* Define a largura fixa */
+    height: 200px; /* Define a altura fixa */
+    background-color: #ffffff;
+    color: #275317;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    font-size: 15px;
+    line-height: 1.2;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    overflow: hidden; /* Esconde qualquer texto que ultrapasse o tamanho do quadrado */
+}
+
+/* Exibe o tooltip ao passar o mouse */
+.hover-text-clorofil:hover::after {
+    opacity: 1;
+}
+
+
+
+/*____________________________________________________________Seção do MENU SA_SC*/
+table {
+    margin: 0 auto; /* Centraliza a tabela horizontalmente */
+    background-color: #203a23; 
+    padding: 50px 190px 32px 190px;
+    box-sizing: border-box; /* Garante que o padding não exceda o tamanho do contêiner */
+    width: 100%;
+    /*max-width: 1200px; /* Limita a largura máxima da tabela */
+}
+
+th, td {	
+    text-align: center;
+    vertical-align: top;
+}
+
+.foto-menu-facil {
+    width: 130px; /* Define uma largura fixa para as imagens */
+    height: 130px; /* Define uma altura fixa para as imagens */
+    padding: 4px;
+    border-radius: 50%; /* Corrige o formato para ser um círculo */
+    border: 3px solid #647345; /* Define a borda mais larga desde o início */
+    object-fit: cover; /* Garante que a imagem mantenha a proporção e preencha o contêiner */
+    transition: border-color 0.3s, transform 0.3s; /* Transição suave para a cor da borda e transformação */
+}
+
+.foto-menu-facil:hover,
+.foto-menu-facil:focus,
+.foto-menu-facil:active {
+    border-color: #ffffff; /* Apenas altera a cor da borda no hover */
+    transform: scale(1.1); /* Aumenta levemente a imagem no hover */
+}
+
+.texto-menu-facil {
+    padding: 10px 0 50px 0; /* Ajuste padding top e bottom */
+    font-size: 20px;
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Gupter', serif;
+	transition: color 0.3s; /* Adiciona uma transição suave para cor e sublinhado */
+}
+
+.h3-menusc {
+    text-align: left;
+    margin-left: 212px;
+}
+
+/* Ajustes para imagens responsivas */
+@media (max-width: 768px) {
+    .foto-menu-facil {
+        width: 70px;
+        height: 70px;
+        margin: 10px auto;
+    }
+
+    table {
+        padding: 30px 15px; /* Ajusta o padding para telas menores */
+    }
+}
+
+
+/*_________________________________________________________Seção da ODS*/
+.ods-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Espaço entre as imagens */
+    flex-wrap: wrap; /* Permite que as imagens quebrem para a próxima linha se necessário */
+    width: 100%; /* Ocupa toda a largura disponível do contêiner */
+    max-width: 100%; /* Garante que não ultrapasse o tamanho do contêiner */
+    height: auto;
+    box-sizing: border-box; /* Inclui padding e border no cálculo da largura total */
+}
+
+.ods-img img {
+    max-width: 100px; /* Ajuste o tamanho conforme necessário */
+    flex-shrink: 0; /* Evita que as imagens encolham */
+    box-sizing: border-box; /* Inclui padding e border no cálculo da largura total */
+}
+
+.ods-img img:hover,
+.ods-img img:focus,
+.ods-img img:active {
+    transform: scale(1.2); /* Aumenta levemente a imagem no hover */
+}
+
+.texto-ods {
+	font-size: 15px;
+	color: #0B2625;
+	padding: 10px;
+}
+
+/*__________________________________________________________Seção de VINCULOS*/
+.vinculos-img {
+    display: flex; /*pra ficar um ao lado do outro*/
+    justify-content: center;
+    align-items: center;
+    gap: 40px; /* Espaço entre as imagens, ajuste conforme necessário */
+    max-width: 100%; /* Garante que não ultrapasse o tamanho do contêiner */
+    box-sizing: border-box; /* Inclui padding e border no cálculo da largura total */
+}
+
+.vinculos-img a {
+    display: block; /* Garante que os links envolvam as imagens corretamente */
+}
+
+.vinculos-img a:hover {
+    border: 2px dotted #d2dbce9d; /* Define a borda mais larga desde o início */    
+    border-radius: 10%;   /* Faz o círculo */
+}
+
+.img-ufsc, .img-sal, .img-fapesc {
+    width: 100%;    
+    height: auto;
+    flex-shrink: 0; /* Evita que as imagens encolham */
+}
+
+.img-ufsc {
+	width: 160px;
+}
+
+.img-sal {
+	width: 205px;
+}
+
+.img-fapesc {
+	width: 138px;
+}
+
+@media (max-width: 768px) {
+    .vinculos-img {
+        gap: 20px; /* Reduz o espaço entre as imagens em telas menores */
+    }
+
+    .img-ufsc, .img-sal, .img-fapesc {
+        max-width: 120px; /* Reduz o tamanho máximo das imagens em telas menores*/
+    }
+}
+
+
+/*---------------------------------------------------------------------------------------------------Rodapé */
+
+footer {
+	color: #203a23;
+	text-align: center;
+	background-color: #ffffff;
+	background-attachment: fixed;
+	border-top: 1px solid #728f69c2;/* Linha verde acima do menu de navegação */	
+	margin-top: 120px;	/*isso é pro vazio entre o footer e o conteudo*/
+}
+
+/* Ajuste para colunas do rodapé */
+.footer-columns {
+	margin-top: 30px;
+	margin-bottom: 20px;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.footer-columns section {
+	flex: 1;
+	min-width: 200px;
+	margin: 10px;
+}
+
+/* Ajuste para imagens do rodapé */
+footer img {
+	width: 10%;
+	margin-bottom: 10px;
+}
+
+/* Ajuste para ícones sociais */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.social-icons div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;   /* Tamanho do círculo */
+    height: 60px;  /* Tamanho do círculo */
+    background-color: white;
+    border-radius: 50%;   /* Faz o círculo */
+    border: 2px solid #647345; /* Borda verde */
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Estilo dos ícones dentro do círculo */
+.social-icons i {
+    color: #214226; /* Cor verde */
+    font-size: 40px; /* Tamanho do ícone */
+}
+
+/* Hover para mudar a cor do fundo e da borda */
+.social-icons div:hover {
+    background-color: #d2dbce9d;
+}
+
+/* Remover o sublinhado padrão dos links */
+.social-icons a {
+    text-decoration: none; /* Remove sublinhado dos links */
+}
+
+/* Remove outline e box-shadow */
+.social-icons a,
+.social-icons a div,
+.social-icons a div i {
+    outline: none;
+    box-shadow: none;
+}
+
+/* Certifique-se de que o hover também não tenha borda azul */
+.social-icons a:focus,
+.social-icons a div:focus,
+.social-icons a div i:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+
+
+/* Títulos de contato e redes sociais */
+.titulo-contato,
+.titulo-redes {
+	font-family: 'Gupter', serif;
+	font-weight: 700;
+	margin: 18px 0;
+	font-size: 20px;
+	font-weight: bolder;
+	color: #203a23;
+}
+
+/* Texto de contato */
+.texto-email {
+	font-size: 23px;
+    color: #203a23;
+}
+
+.texto-endereco {
+	font-size: 20px;
+    color: #203a23;
+}
+
+.texto-contato {
+	color: #647345;
+	text-align: left;
+}
+
+#contatos a {
+	text-decoration: none;
+	color: inherit;
+}
+
+/* Direitos autorais no rodapé */
+.footer-rights {
+	margin-top: 10px;
+	padding-top: 7px;
+	padding-bottom: 7px;
+	font-size: 17px;
+	color: #ffffff;
+	background-color: #6473456e;;
+}
+
+.footer-rights i {	
+	font-size: 14px;	
+}
+
+/* Media queries para responsividade */
+@media (max-width: 768px) {
+	.footer-columns {
+		flex-direction: column;
+		align-items: center;
+	}
+	
+	footer img {
+		width: 5%;
+	}
+	
+	.social-icons {
+		flex-direction: row; /* Mantém os ícones em linha */
+		gap: 15px;
+	}
+	
+	.titulo-contato,
+	.titulo-redes {
+		font-size: 18px;
+	}
+	
+	.texto-email,
+	.texto-endereco {
+		font-size: 18px;
+	}
+	
+	.footer-rights {
+		font-size: 15px;
+	}
+}
+
+/*_____________________________________________________MOVIMENTAÇÕES DA PÁGINA INICIAL */
+
+.reveal {
+    opacity: 0; /* Começa invisível */
+    transform: translateY(70px); /* Levemente fora da posição original (abaixo) */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Suave */
+}
+
+.reveal-h3 {
+    opacity: 0; /* Invisível inicialmente */
+    transform: translateY(-50px); /* Movido para cima */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Transição suave */
+}
+
+.reveal.show, .reveal-h3.show  {
+    opacity: 1; /* Visível */
+    transform: translateY(0); /* Retorna à posição original */
+}
+
+
+/*-----------------------------------------------------------------------------------PÁGINA SOBRE O PROJETO */
+
+/* Estiliza o texto com fundo semitransparente */
+.texto-box-sobre {
+    font-size: 20px;
+    color: #214226;
+    text-align: justify;
+    padding: 40px;
+    max-width: 1000px; /* Limita a largura máxima do texto */
+    margin: 0 auto; /* Centraliza o texto horizontalmente */
+    line-height: 1.3;
+}
+
+/* Estilo da palavra span */
+.text-bold {
+    color: #590232;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Estilo dos Cards */
+.card-sobre-oprojeto {
+    background-color: #5b60301f;
+    color: #5B6030;
+    padding: 30px;
+    font-family: Arial, sans-serif;
+    text-align: justify;
+    max-width: 935px; /* Limita a largura máxima do texto */
+    margin: 0 auto; /* Centraliza o texto horizontalmente */
+    line-height: 1.2;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card-header-sobre-oprojeto {
+    cursor: pointer;
+}
+
+.card-header-sobre-oprojeto h4 {
+    margin: 0;
+    color: #c1aa34;
+    font-size: 21px;
+    margin-bottom: 13px;
+    font-weight: bold;
+}
+
+.card-header-sobre-oprojeto p {
+    color: #214226;
+    font-size: 18px;
+}
+
+/* Estilo do dropdown*/
+.card-dropdown-sobre-oprojeto {
+    display: none;
+    margin-top: 45px;
+    background-color: #fcfcfc;
+    color: #1E4023;
+    padding: 28px;
+    border-radius: 8px;
+    transition: max-height 0.4s ease;
+    font-family: "Roboto", Sans-serif;	
+}
+
+.card-dropdown-sobre-oprojeto.open {
+    display: block;
+}
+
+/* Estilo da palavra com hover */
+.hover-text-clicaaqui {
+    position: relative; /* Define o contexto de posição */
+    cursor: pointer;
+    font-size: 18px;
+    color: #590232;
+    text-decoration-line: underline;
+    text-decoration-style: double;
+}
+
+.hover-text-clicaaqui:hover {
+    color: #203a23; /* Cor de destaque no hover */
+    font-weight: bold; /* Aumenta o peso da fonte ao passar o mouse */
+}
+
+
+/*______________________________________________________Seção Colaboradores*/
+
+/* Container principal COORDENADORA*/
+.conteudo-projeto-colaboradores-cordenadora{
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+ 	background-color: #647345;
+	padding: 44px;	
+}
+
+/* Container principal COLABORADORES*/
+.conteudo-projeto-colaboradores {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+ 	background-color: #6473456c;
+	padding: 44px 0 24px 0;	
+}
+
+/* Card de cada colaborador */
+.colaborador {    
+    display: flex;
+    align-items: center;
+    width: 58%; /* Ajuste para duas colunas */
+    max-width: 580px;
+    /*background-color: #ffffff;*/
+    padding: 10px;
+    margin-bottom: 30px;
+    padding-left: 40px;
+}
+
+.colaborador-cordenadora{
+    padding: 20px;
+    /*width: 70%;*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: left;   
+    margin-bottom: 15px;
+}
+
+/* Estilo da foto */
+.foto-colaborador {
+    width: 230px;
+    height: 190px;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.foto-colaborador-cordenadora{
+	width: 260px;
+    height: 210px;
+    margin-right: 5px;
+    flex-shrink: 0;
+}
+
+/* Informações do colaborador */
+.info-colaborador {
+    text-align: left;
+    color: #1E4023;
+    max-width: 318px;
+    max-height: 180px;
+}
+
+.info-colaborador h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.info-colaborador-cordenadora h4 {
+	font-size: 25px;   
+    font-weight: bold;
+    color: #ffffff;
+	padding: 0px 20px;
+}
+
+.info-colaborador p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.info-colaborador-cordenadora p {
+	padding: 10px 20px;
+    margin-bottom: 10px;
+    color: #D2DBCE;
+	font-family: "Roboto", Sans-serif;			
+}
+
+.cargo {
+    margin-bottom: 10px;
+    color: #ffffff;	
+	text-transform: uppercase;
+	font-size: 15px;
+}
+
+.descricao-colaborador {
+    font-size: 14px;
+    color: #1E4023;
+    margin-bottom: 15px;
+}
+
+.descricao-colaborador-cordenadora {
+	font-size: 17px;
+    margin-bottom: 20px;
+    color: #D2DBCE
+}
+
+/* Botão Lattes */
+.btn-lattes {    
+    color: #590232;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Botão Lattes */
+.btn-lattes-coodernadora {    
+    color: #590232;
+    text-decoration: none;
+    font-weight: bold;
+    padding-left: 20px;
+}
+
+.btn-lattes:hover {
+    color: #1E4023;
+    text-decoration: none;
+}
+
+.btn-lattes-coodernadora:hover {
+    color: #1E4023;
+    text-decoration: none;
+}
+
+/* Ajuste para telas pequenas */
+@media (max-width: 768px) {
+    .colaborador {
+        width: 100%; /* Ajuste para uma coluna em telas menores */
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .foto-colaborador {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+}
+
+
+
+
+/*---------------------------------------------------------------------------------------PÁGINA POLICY */
+
+.box-policy-briefs {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    background-color: #D2DBCE;
+    padding: 50px;
+    padding-right: 150px;
+    padding-left: 150px;
+    text-align: justify;
+    margin-top: 58px;  
+    gap: 20px;
+}
+
+.titulocard-policy-briefs {
+    color: #3B642F;		
+    font-size: 22px;
+}
+
+.foto-policy-briefs {
+    width: 100%;
+    height: 100%;
+    margin-right: 10px; /* Espaço entre a imagem e o texto */
+    flex-shrink: 0;
+    transition: transform 0.8s ease; /* Transição suave para o zoom */
+    object-fit: cover; /* Mantém a imagem dentro dos limites do quadrado */
+}
+
+.foto-policy-briefs:hover {
+    transform: scale(1.2); /* Aumenta a imagem em 20% ao passar o mouse */
+}
+
+.container-foto-policy-briefs {
+    width: 660px;
+    height: 100%;
+    overflow: hidden; /* Garante que a imagem fique dentro dos limites do container */
+    display: inline-block; /* Mantém o container alinhado como bloco */
+}
+
+
+
+.descricaocard-policy-briefs {
+    font-size: 17px;
+    margin-right: 60px;
+    color: #0B2625;
+}
+
+.text-policy-briefs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .box-policy-briefs {
+        flex-direction: column; /* Mudar para coluna em telas menores */
+        padding: 5vw; /* Ajustar padding para telas menores */
+    }
+
+    .foto-policy-briefs {
+        width: 80%; /* Ajustar largura da imagem para telas menores */
+        margin: 0 auto 3vw auto; /* Centralizar e adicionar margem abaixo */
+    }
+
+    .titulocard-policy-briefs {
+        font-size: 4vw; /* Ajustar tamanho da fonte para telas menores */
+    }
+
+    .descricaocard-policy-briefs {
+        font-size: 3vw; /* Ajustar tamanho da fonte para telas menores */
+    }
+}
+
+/*----------------------------------------------------------------------------------------------PÁGINA PRODUÇÃO */
+
+#producao-bibliografica {
+    padding: 10px;		
+    margin-bottom: 80px;
+    position: relative; /* Adiciona posição relativa ao contêiner */
+}
+
+#producao-bibliografica::after {
+    content: "";
+    display: block;
+    width: 70%; /* Largura da linha */
+    height: 1px; /* Altura da linha */
+    background-color: #3B642F; /* Cor da linha */
+    margin: 0 auto; /* Centraliza a linha horizontalmente */
+    position: absolute;
+    bottom: 0; /* Posiciona a linha no fundo do contêiner */
+    left: 0;
+    right: 0;
+}
+
+#producao-bibliografica h3 {
+    text-align: center;
+    color: #3b642f;
+}
+
+#producao-bibliografica .titulo-producao-bibliografica {
+    font-size: 25px;
+    font-weight: bold;
+    color: #3b642f;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 10%;
+}
+
+#producao-bibliografica .conteudo-producao-bibliografica {
+    color: #0B2625;
+    padding: 50px;
+    text-align: justify;
+    font-family: "Roboto", Sans-serif;
+    /*background-color: #D2DBCE;*/
+}
+
+#producao-bibliografica .texto-conteudo-producao-bibliografica {
+    font-size: 15px;
+    color: #0B2625;
+    padding: 20px;
+    text-align: justify;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+b, strong {
+    font-weight: bolder;
+}
+
+/* Media Queries para responsividade */
+@media (max-width: 768px) {
+    #producao-bibliografica .titulo-producao-bibliografica {
+        font-size: 20px;
+        padding: 0 5%;
+    }
+
+    #producao-bibliografica .conteudo-producao-bibliografica {
+        padding: 20px;
+    }
+
+    #producao-bibliografica .texto-conteudo-producao-bibliografica {
+        font-size: 14px;
+        padding: 15px;
+    }
+}
+
+
+/*----------------------------------------------------------------------------------------------PÁGINA do BLOG */
+
+.box-postagem {
+    font-size: 18px;
+    color: #0B2625;
+    background-color: #d2dbce;
+    text-align: justify;
+    padding: 50px;
+    max-width: 800px; /* Limita a largura máxima do texto */
+    margin: -80px auto; /* Centraliza o texto horizontalmente */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.titulo-post {
+    color :#206328;
+    font-size: 26px;
+}
+
+.data-post {
+    text-align: right;
+}
+
+.img-post {
+    width: 100%;
+    min-height: 60vh; /* Garante que o fundo ocupe toda a altura da janela */   
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;  
+    margin-bottom: 20px;
+}
+
+.descricao-post {
+    font-size: 19px;   
+    color: #000000; 
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 1.5;    
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.compartilhe-post {
+    text-align: center;
+    line-height: 1.5;   
+    letter-spacing: 2px;	
+    font-size: 16px; 
+}
+
+.compartilhe-post a {
+    text-decoration: none; /* Remove a linha sob os ícones */
+}
+
+hr {
+    margin: auto; /* Centraliza a linha horizontalmente */
+    margin-bottom: 10px;    
+}
+
+
+/*--------------------------------------------------------------------------------------------------PÁGINA ACERVO */
+
+.menu-facil-container-acervo {
+    background-color: #5d734d; /* Parte verde */
+    position: relative;
+    width: 100%;
+}
+
+.linha-verde {
+    width: 75%;
+    border: 2px solid #d2dbce;
+    position: relative; /* Define a posição relativa ao elemento pai */
+    top: 50px; /* Move a linha 20px para baixo */
+    margin: 0 auto 50px auto; /* Mantém o centralizado e o espaçamento inferior */
+}
+
+
+.slide-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.slide-wrapper {
+    overflow: hidden;
+    width: calc(210px * 3.5 + 260px); /* Largura ajustada para caber 4 imagens + margem (60px de espaço total) */
+    display: flex;
+    scroll-behavior: smooth;
+    justify-content: center;
+}
+
+.menu-table {
+    display: flex;
+    white-space: nowrap; /* Garante que as células não quebrem linha */
+}
+
+.menu-table th {
+    padding: 0 10px;
+}
+
+.foto-menu-facil-acervo {
+    width: 210px;
+    height: 150px;
+    object-fit: cover;
+    border: 1px solid #3B642F; /* Cor da borda */
+    transition: transform 0.3s, border-color 0.3s; /* Transição suave no hover */
+    margin: 15px; /* Espaçamento ao redor de cada imagem */
+}
+
+.foto-menu-facil-acervo:hover {
+    border-color: #d2dbce; /* Cor da borda ao passar o mouse */
+    transform: scale(1.1); /* Efeito de zoom ao passar o mouse */
+}
+
+button {
+    margin: 0 40px; /* Adiciona 20px de espaçamento nas laterais esquerda e direita */
+}
+
+
+.slide-left, .slide-right {
+    background-color: #3b642f;
+    color: white;
+    font-size: 24px;
+    padding: 10px;
+    width: 70px; /* Define a largura do botão */
+    height: 70px; /* Define a altura do botão, igual à largura para manter o formato circular */
+    border-radius: 50%; /* Torna o botão arredondado */
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slide-left:hover, .slide-right:hover {
+    background-color: #d2dbce; /* Muda a cor ao passar o mouse */
+}
+
+
+/*------------------------------------------------------------------------------------------------------PAGINA LINKS*/
+
+#section-frase {
+	position: relative;
+	text-align: center;
+    background-color: #beb4a0;
+    padding: 40px; /* Adiciona um espaço interno para dar margem à frase */
+    margin: 0 auto;
+}
+
+#section-frase p {
+    color: white;
+    font-size: 21px;   
+}
+
+i {
+    font-style: italic;
+    font-size: 20px;
+}
+
+.linha-branca {
+    width: 83%;
+    border: 2px solid #ffffff;    
+}
+
+
+/*_____________________________________________________Seção do MENU dos quadrados */
+
+#quadrados-section {
+    display: flex;
+    justify-content: center; /* Centraliza a seção horizontalmente */
+    gap: 23px; /* Espaço entre os quadrados */
+    padding: 10px 0;
+    flex-wrap: wrap; /* Garante que os quadrados se ajustem em telas menores */
+}
+
+/* Estilo para garantir que ambos os quadrados tenham o mesmo tamanho */
+.quadrado-texto, .quadrado-imagem {
+    flex: 1; /* Ambos os quadrados ocupam o mesmo espaço */
+    max-width: 550px; /* Define o tamanho máximo */
+    min-width: 350px; /* Define o tamanho mínimo */
+    height: 300px; /* Altura fixa para ambos */
+    box-sizing: border-box; /* Garante que o padding seja incluído na altura e largura */
+}
+
+/* Estilo do primeiro quadrado (texto, título e botão) */
+.quadrado-texto {
+    background-color: rgba(210, 219, 206, 0.9); /* Fundo semitransparente */
+    color: #5d734d;  /* Texto verde */
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.quadrado-texto h4 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: #728F69;
+}
+
+.quadrado-texto p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: justify;   
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 1.2;   
+}
+
+.veja-mais-btn {   
+    color: #3B642F; /* Texto verde */
+    padding: 10px 20px;
+    font-size: 16px;
+    border: solid #728F69;;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.veja-mais-btn:hover {
+    background-color: #ffffff;; /* Mudança de cor no hover */
+}
+
+/* Estilo do segundo quadrado (imagem) */
+.quadrado-imagem {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ececec; /* Fundo neutro atrás da imagem */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+    overflow: hidden; /* Garante que a imagem não "escape" do quadrado */
+}
+
+.quadrado-imagem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Faz com que a imagem cubra todo o quadrado, sem distorcer */
+    border-radius: 8px; /* Borda arredondada */
+    transition: transform 0.8s ease; /* Transição suave para o zoom */
+}
+
+/* Zoom na imagem ao passar o mouse */
+.quadrado-imagem:hover img {
+    transform: scale(1.2); /* Aumenta a imagem em 20% ao passar o mouse */
+}
+
+
+/*-------------------------------------------------------------------------------------------------PÁGINA SITES-BOTANICA*/
+
+/*________________________________________________Seção recomenda*/
+
+.conteudo-projeto-recomenda {
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-top: 30px;
+	margin-bottom: 80px;
+    background-color: #537352;
+    padding-bottom: 30px;
+}
+
+.site-recomendado {
+	padding: 20px;
+	text-align: justify;
+	/* Centraliza o texto dentro do retângulo */
+	margin: 10px;
+	/* Margem horizontal e vertical */
+    margin-bottom: 20px;
+}
+
+.site-recomendado h4 {
+	font-size: 20px;
+	margin-bottom: 13px;
+	font-weight: bolder;
+    color: white;
+    text-transform: uppercase;
+}
+
+.site-recomendado p {
+	font-size: 16px;
+	margin-bottom: 20px;
+	flex-grow: 1;
+	color: rgb(255, 255, 255);
+    font-size: 1em;
+    line-height: 1.2; 
+}
+
+.site-recomendado .btn-visit {
+	background-color: #2d4c24;
+	color: white;
+	padding: 5px;
+	text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+.site-recomendado .btn-visit:hover {
+	background-color: #3b642f;
+}
+
+/*-------------------------------------------------------------------------------------------------PÁGINA laboratorios-biologia-ufsc*/
+
+/*________________________________________________Seção laboratórios*/
+
+.conteudo-projeto-recomenda-lab {
+    padding-left: 190px;
+    padding-right: 150px;
+    padding-top: 30px;
+    margin-bottom: 80px;
+    background-color: #d2d9c6;
+    padding-bottom: 30px;
+}
+
+.site-recomendado-lab {
+    padding: 5px;
+    text-align: justify;
+    margin: 10px;
+    margin-bottom: 20px;
+}
+
+.site-recomendado-lab h4 {
+    font-size: 20px;
+    margin-bottom: 13px;
+    font-weight: bolder;
+    color: #537352;
+    text-transform: uppercase;
+}
+
+.site-recomendado-lab p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    flex-grow: 1;
+    color: rgb(255, 255, 255);
+    font-size: 1em;
+    line-height: 1.2;
+}
+
+/* Ajuste para ícones sociais */
+.social-icons-lab {
+    display: flex;
+    gap: 30px;
+}
+
+.social-icons-lab a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;   /* Tamanho do círculo */
+    height: 30px;  /* Tamanho do círculo */
+    border-radius: 50%;   /* Faz o círculo */
+    border: 1px solid #3B642F; /* Apenas a borda verde */
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    text-align: center;
+    text-decoration: none; /* Remove sublinhado dos links */
+}
+
+.social-icons-lab a:hover {
+    border-color: #ffffff; /* Borda verde permanece no hover */
+    background-color: #ffffffb9; /*preenchimento */
+}
+
+.social-icons-lab i {
+    color: #537352; /* Cor dos ícones */
+    font-size: 25px; /* Tamanho dos ícones uniformizado */
+    transition: color 0.3s ease;
+}
+
+.social-icons-lab a:hover i {
+    color: #3B642F; /* Cor do ícone muda para verde escuro no hover */
+}
